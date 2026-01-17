@@ -1,3 +1,4 @@
+
 const logoo = document.getElementById("logo");
 const navbar = document.getElementById("navbar");
 const singuplogin = document.getElementById('signinlogin');
@@ -27,7 +28,7 @@ const ofse6show = document.getElementById("yearrep");
 
 mobileQuery.addEventListener('change', handleMobileChange);
 handleMobileChange(mobileQuery);
-singuplogin.addEventListener('click', dosomething);
+
 lottie.addEventListener('mouseenter', enter);
 lottie.addEventListener('mouseleave', out);
 logocon.addEventListener('mouseenter', abtlogo);
@@ -49,7 +50,6 @@ startShow();
 function handleMobileChange(event) {
     if (event.matches) {
         logoo.addEventListener("click", navshow);
-        singuplogin.addEventListener("click", dosomething);
     }
 }
 

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="23_adminNormal_dashboard.css">
+     <link rel="stylesheet" href="24_adminNormal_dashboard_mobile.css" media="screen and (max-width: 480px)">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://kit.fontawesome.com/0bd3f6bcf9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="logobg">
+        <img src="logofade.png">
+    </div>
+
+    <div class="admin">
+
+
+        <div class="top">
+            <h1>Admin Dashboard</h1>
+        </div>
+
+        <div class="adminNav">
+            <div class="verifReq" id="verifReq">
+                <h1>Verification request</h1>
+            </div>
+            <div class="allmem" id="allmem">
+                <h1>All members</h1>
+            </div>
+            <div class="manualAt" id="manualAt">
+                <h1>Manual attendance</h1>
+            </div>
+            <div class="attenReq" id="attenReq">
+                <h1>Attendance report</h1>
+            </div>
+            <div class="regRep" id="regRep">
+                <h1>Registration report</h1>
+            </div>
+            <div class="qrScanner" id="qrScanner">
+                <h1>QR scanner</h1>
+            </div>
+            <!--- <div class="memberstat">
+                      <h1>Member Status</h1>
+                  </div>    -->
+        </div>
+
+        <!--For infos-->
+        <div class="content1" id="content1">
+            <div class="title">
+                <h1>Verification request</h1>
+            </div>
+            <div class="classify">
+                <div class="class1">
+                    <h1>Name</h1>
+                </div>
+                <div class="class2">
+                    <h1>Email</h1>
+                </div>
+            </div>
+            <hr>
+            <div class="wrap">
+                <div class="contain">
+                    <div class="info">
+                        <div class="name">Meowejo Jeric</div>
+                        <div class="email">me@2007</div>
+                    </div>
+                    <div class="verify">
+                        <div class="accept" onclick="accept()">Accept</div>
+                        <div class="reject" onclick="reject()">Reject</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content2" id="content2">
+            <div class="title">
+                <h1>List of members</h1>
+            </div>
+            <div class="classify">
+                <div class="class1">
+                    <h1>Name</h1>
+                </div>
+                <div class="class2">
+                    <h1>Email</h1>
+                </div>
+            </div>
+            <hr>
+            <div class="wrap">
+                <div class="contain">
+                    <div class="info">
+                        <div class="name">Liam Garcia</div>
+                        <div class="email">liam.g@email.com</div>
+                    </div>
+                </div>
+                <div class="contain">
+                    <div class="info">
+                        <div class="name">Chloe Bautista</div>
+                        <div class="email">chloe.bau@testmail.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content3" id="content3">
+            <div class="title">
+                <h1>Manual Attendance</h1>
+            </div>
+            <div class="classify">
+                <div class="class1">
+                    <h1>Email</h1>
+                </div>
+                <div class="class2">
+                    <h1>Action</h1>
+                </div>
+            </div>
+            <hr>
+            <div class="wrap">
+                <div class="contain">
+                    <div class="info">
+                        <div class="email">e.lopez_99@provider.net</div>
+                    </div>
+                    <div class="verify">
+                        <div class="accept" style="background-color: #4CAF50; color: white;">Present</div>
+                        <div class="reject" style="background-color: #f44336; color: white;">Absent</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content4" id="content4">
+            <div class="title">
+                <h1>Attendance reports</h1>
+            </div>
+            <div class="classify">
+                <div class="class1">
+                    <h1>Name</h1>
+                </div>
+                <div class="class2">
+                    <h1>Status</h1>
+                </div>
+            </div>
+            <hr>
+            <div class="wrap">
+                <div class="contain">
+                    <div class="info">
+                        <div class="name">Liam Garcia</div>
+
+                    </div>
+                    <div class="verify">
+                        <div class="atend1">
+                            <h2>Present</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="contain">
+                    <div class="info">
+                        <div class="name">Chloe Bautista</div>
+
+                    </div>
+                    <div class="verify">
+                        <div class="atend2">
+                            <h2>Absent</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content5" id="content5">
+            <div class="title">
+                <h1>Registration reports</h1>
+            </div>
+            <div class="classify">
+                <div class="class1">
+                    <h1>Name</h1>
+                </div>
+                <div class="class2">
+                    <h1>Confirmation</h1>
+                </div>
+            </div>
+            <hr>
+            <div class="wrap">
+                <div class="contain">
+                    <div class="info">
+                        <div class="name">Mia Rodriguez</div>
+                    </div>
+                    <div class="verify">
+                        <div class="reg1">
+                            <h2 class="confirmationstatus">Verified</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content6" id="content6">
+            <div class="title">
+                <h1>QR Code Scanner</h1>
+            </div>
+
+            <div class="wrap">
+                <div class="scanner-info-card">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h3>Attendance Scanning</h3>
+
+                    <div class="scanner-features">
+                        <div class="feature-item">
+                            <span>Real-time Processing</span>
+                        </div>
+                        <div class="feature-item">
+                            <span>Live Scan History</span>
+                        </div>
+                        <div class="feature-item">
+                            <span>Auto Time In/Out</span>
+                        </div>
+                        <div class="feature-item">
+                            <span>Instant Notifications</span>
+                        </div>
+                    </div>
+
+                    <div class="scanner-actions">
+                        <a href="scanner.html" class="btn-scanner-primary">
+                            <i class="fa-regular fa-camera"></i>
+                            Open QR Scanner
+                        </a>
+                    </div>
+
+                    <div class="scanner-tips">
+                        <h4><i class="fa-regular fa-lightbulb"></i></h4>
+                        <ul>
+                            <li>Ensure good lighting for accurate scanning</li>
+                            <li>Hold the QR code steady within the frame</li>
+                            <li>Select the event before starting to scan</li>
+                            <li>Check scan history to verify successful scans</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="99_admin.js"></script>
+</body>
+
+</html>

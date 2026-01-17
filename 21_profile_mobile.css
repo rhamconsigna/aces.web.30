@@ -1,0 +1,67 @@
+
+    .profile {
+        padding: 20px; 
+        margin: 10px;
+    }
+
+    .profiletop h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .profiletop p {
+        text-align: center;
+        font-size: 13px;
+    }
+
+
+    .imagecontain {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .imagecontain img {
+        margin-left: 0; 
+        height: 120px;
+        width: 120px;
+    }
+
+    .avatar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .avatar button {
+        margin-left: 0; 
+        width: 100%;
+        max-width: 200px;
+    }
+
+  
+    .profiletext {
+        font-size: 16px;
+    }
+
+  
+    .qrcontain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .qr-box {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .qrcontain img {
+        height: auto;
+        width: 100%;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }

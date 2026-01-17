@@ -1,84 +1,112 @@
-.Sign {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100%;
-    width: auto;
-    margin-left: -60px;
-
-}
-
-.left {
-    width: 100% !important;
-    padding: 20px;
-    order: 1;
-}
-
-.right {
-    width: 100% !important;
-    order: 2;
-    display: block;
-}
-
-.loginpic {
-    height: 40vh;
-    object-fit: cover;
-}
-
-.bg-logo {
-    height: 300px !important;
-    width: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.inputSign {
-    width: 60% !important;
-
-}
-
-.inputSign h1 {
-    font-size: 35px !important;
-    margin-bottom: 10px;
-}
-
-
-.namein {
-    flex-direction: column;
-    gap: 10px;
-}
-
-.namein div {
-    width: 100%;
-}
-
-
-label {
-    font-size: 14px;
-}
-
-input {
-    font-size: 16px;
-    padding: 10px;
-}
-
-.signinbutton {
-    width: 300px;
-}
-
-.signinbutton h1 {
-    font-size: 15px;
-}
-
-.right img {
-    height: 500px;
-    border-radius: 20px;
-    width: 340px;
-    margin-left: 90px;
-    margin-bottom: 20px;
+.logocontain {
+    position: relative;
+    z-index: 1;
+    align-self: center;
 }
 
 .logocontain img {
-    height: 200px;
+    position: absolute;
+    z-index: 2;
+    align-self: center;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.inputsign {
+    position: absolute;
+    z-index: 3;
+    border: transparent;
+    border-radius: 4%;
+    width: 70%;
+    margin-left: 12%;
+    margin-top: 7%;
+    padding: 2%;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+}
+
+.inputsign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+}
+
+.namein #name{
+    margin-left: 25px;
+}
+
+.studentno {
+    display: flex;
+    margin-left: 15.5%;
+    height: 20;
+}
+
+.acadyear {
+    text-align: center;
+    margin-left: -3%;
+}
+
+.email {
+    margin-left: .2%;
+}
+
+.password1 {
+    margin-left: 10;
+}
+
+.password2 {
+    margin-left: 27.6%;
+}
+
+.signinbutton button {
+    border: transparent;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    margin-top: 30px;
+    margin-left: 34%;
+}
+
+.signinbutton button:hover {
+    border: transparent;
+    border-radius: 20px;
+    background-color: rgb(211, 224, 241);
+    transition: all .2s ease-in-out .1s;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icons i {
+    font-size: 55px;
+}
+
+.terms {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    border: transparent;
+    border-radius: 5%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    background-color: rgb(204, 204, 204);
+
+    width: 300px;
+    padding: 2%;
+   
+    margin-top: 5%;
+    margin-left: 49px;
+    margin-top: 100px;
+}
+
+.terms.open{
+    display: block;
+}
+
+
+.terms h2 {
+    font-size: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
 }

@@ -12,28 +12,32 @@
 
 <body>
     <div class="Sign">
-        <div class="left">
-            <div class="logocontain">
-                <img src="logofade.png" class="bg-logo">
-            </div>
 
-            <div class="inputSign">
+
+        <div class="logocontain">
+            <img src="logofade.png" class="bg-logo">
+        </div>
+
+        <div class="signcontain">
+
+            <div class="inputsign">
                 <h1>Sign in</h1>
 
                 <div class="namein">
                     <label for="name">Name</label>
-                    <input type="text" id="name">
+                    <input type="text" id="name" required>
                     <label for="surname">Surname</label>
                     <input type="text" id="surname">
                 </div>
 
                 <div class="studentno">
-                    <label for="studentnum">Student Number</label>
+                    <label for="studentnum">Student#</label>
                     <input type="number" id="studentnum">
                 </div>
+
                 <div class="acadyear">
                     <label for="academicyear"> Academic Year</label>
-                    <input type="text" id="academicyear">
+                    <input type="text" id="academicyear" placeholder="1st">
                 </div>
 
                 <div class="email">
@@ -41,19 +45,19 @@
                     <input type="text" id="emailin" class="emailin" placeholder="juan@gmail.com">
                 </div>
 
-                <div class="password">
+                <div class="password1">
                     <label for="passin">Password</label>
                     <input type="password" id="passin" placeholder="Password">
                 </div>
 
 
-                <div class="password">
+                <div class="password2">
                     <label for="passincon"> Confirm Password</label>
                     <input type="password" id="passincon" placeholder="Password">
                 </div>
 
                 <div class="signinbutton">
-                    <button>
+                    <button id="signbut">
                         <h1>Sign in</h1>
                     </button>
                 </div>
@@ -70,12 +74,28 @@
 
                 <p class="switch-link">have an account? <a href="06_login.html">Login</a></p>
             </div>
-        </div>
 
-        <div class="right">
-            <img src="signpic.png" class="loginpic">
+        </div>
+        <div class="terms" id="terms">
+            <h2>In compliance with the Republic Act No. 10173 or
+                known us the Data Privacy Act of 2012, the Association
+                of Computer Engineering Students (ACES) respects your
+                right to data privacy and protection, By providing your
+                personal information such as: Name, Age, Email Adress
+                and College Program, you are giving your concent to ACES to
+                collect, store and process your data for organizational
+                purposes such as membership verification. Your information
+                will be kept confidential and will not be shared without
+                your consent. If you wish to delete your account, you may
+                contact our officers. For more information, you may refer
+                to the full text of the law at:
+                https://privacy.gov.ph/data-privacy-act/</h2>
+
+                <label for="inputterms">I give my consent</label>
+                <input type="checkbox" id="inputterms">
         </div>
     </div>
+    <script src="sign.js"></script>
 </body>
 
 </html>

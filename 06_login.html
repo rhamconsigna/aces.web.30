@@ -1,59 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login-ACES</title>
-    <script src="https://kit.fontawesome.com/0bd3f6bcf9.js" crossorigin="anonymous"></script>
+    <title>Login | ACES</title>
     <link rel="stylesheet" href="08_login.css">
     <link rel="stylesheet" href="15_login_mobile.css" media="screen and (max-width: 480px)">
 </head>
 
 <body>
-    <div class="loggin">
-        <div class="left">
-            <div class="logocontain">
-                <img src="logofade.png" class="logo">
-            </div>
+     <div class="bglogo">
+            <img src="logofade.png">
+        </div>
+    <div class="logincontainer">
+       
 
-            <div class="inputlogin">
-                <h1>LOGIN</h1>
+        <div class="logoarea">
+            <img src="logo.png" alt="ACES Logo">
+        </div>
+        <h1>Welcome Back</h1>
+        <p>Please sign in with your Email account</p>
 
-                <div class="email">
-                    <label for="emailin">Email Address</label>
-                    <input type="text" id="emailin" class="emailin" placeholder="email@example.com">
-                </div>
+        <button class="googlebtn" id="googlesign">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google">
+            <span>Sign in with Google</span>
+        </button>
 
-                <div class="password">
-                    <label for="passin">Password</label>
-                    <input type="password" id="passin" placeholder="Password">
-                </div>
-
-                <div class="loginbutton">
-                    <button>
-                        <h1>Login</h1>
-                    </button>
-                </div>
-
-                <div class="divider">
-                    <hr><span>OR</span>
-                    <hr>
-                </div>
-
-                <div class="icons">
-                    <div class="google"><i class="fa-brands fa-google"></i></div>
-                    <div class="fb"><i class="fa-brands fa-facebook"></i></div>
-                </div>
-
-                <p class="switch-link">Don't have an account? <a href="07_sign.html">signup</a></p>
-            </div>
+        <div class="footer">
+            <p>Use your Email for verification.</p>
         </div>
 
-        <div class="right">
-            <img src="loginpic.png" class="loginpic">
-        </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="100_login.js"></script>
+
 </body>
 
 </html>

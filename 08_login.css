@@ -1,53 +1,88 @@
-.loggin {
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   background-color: rgb(211, 224, 241);
-   padding: 50px;
-   min-height: 100vh;
-}
 
-.left {
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-}
-
-.inputlogin {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.logo img {
-    opacity: 0.5;
-    margin-top: 40px; 
-}
-
-.right {
-    width: 45%;
+body {
+    background-color: #fcfaf2;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    z-index: 1;
 }
 
-.right img {
-    max-height: 80vh;
-    width: auto;
+.bglogo{
+    position: absolute;
+    z-index: 2;
+    margin-top: 10%;
 }
 
-.icons  {
-display: flex;
-gap: 40px;
+.bglogo img{
+    height: 550px;
+    margin-top: -18%;
 }
 
-.google, .fb{
-    font-size: 80px;
-}
-
-.emailin, #passin {
+.logincontainer {
+    padding: 20px;
     width: 100%;
-    padding: 15px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    font-size: 18px;
+    border: transparent;
+    border-radius: 5%;
+    max-width: 400px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+    position: absolute;
+    z-index: 4;
+
+}
+
+
+.logoarea img {
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #111;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.googlebtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.googlebtn img {
+    height: 20px;
+}
+
+.googlebtn:hover {
+    background: #f9f9f9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 11px;
+    color: #999;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }

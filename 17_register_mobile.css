@@ -1,4 +1,6 @@
-/* --- Event Registration Mobile --- */
+.logo img{
+    height: 100px;
+}
 
 .register {
     width: 100% !important;
@@ -12,12 +14,12 @@
     border-radius: 15px;
 }
 
-/* Stacks Title and Join Button */
+
 .title {
     display: flex;
-    flex-direction: column; /* Stack vertically */
+    flex-direction: column;
     align-items: center;
-    gap: 10px !important; /* Kill the 1500px desktop gap */
+    gap: 10px !important; 
     margin: 20px 0;
 }
 
@@ -31,55 +33,56 @@
 }
 
 .button button {
-    margin-top: 0 !important; /* Reset desktop margin */
+    margin-top: 0 !important; 
     width: 200px;
 }
 
-/* Fix Description */
+
 .description h1 {
     font-size: 18px !important;
     padding: 0 15px !important;
     text-align: justify;
-    margin-top: 10px !important;
+    margin-top: -100px !important;
 }
 
-/* --- Time & Location Stacking --- */
+
 .timesetting {
     display: flex;
-    flex-direction: column; /* Stack them */
+    flex-direction: column; 
     align-items: center;
-    gap: 15px !important; /* Kill the 900px desktop gap */
+    gap: 15px !important; 
     margin: 30px 0 !important;
-    margin-left: 0 !important; /* Reset the -250px margin */
+    margin-left: 0 !important;
 }
 
 .datetime, .location {
-    width: 90% !important; /* Fill the screen width */
+    width: 90% !important; 
     gap: 15px !important;
 }
 
 .dateicon i, .locationicon i {
-    font-size: 40px !important; /* Shrink from 80px */
+    font-size: 40px !important; 
 }
 
 .datedetails h1, .locationdetails h1 {
     font-size: 18px !important;
 }
 
-/* --- Organizers Section --- */
 .organizers {
-    margin-left: 0 !important; /* Center on screen */
+    margin-left: 0 !important; 
     align-items: center;
     width: 100%;
 }
 
 .organizer1, .organizer2 {
-    width: 90% !important; /* Change from 700px */
-    border-radius: 20px !important; /* Simplify corners for mobile */
+    width: 90% !important; 
+    border-radius: 20px !important; 
 }
 
 .organizer1 i, .organizer2 i {
-    font-size: 60px !important; /* Shrink from 120px */
+    font-size: 60px !important; .logo img{
+    height: 150px;
+}
 }
 
 .organizer1 h1, .organizer2 h1 {

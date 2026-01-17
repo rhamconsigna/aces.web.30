@@ -27,7 +27,7 @@
         background: rgba(0, 0, 0, 0.20);
         box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
         backdrop-filter: blur(30px);
-        height: 300px;
+        height: fit-content;
         position: absolute;
         z-index: 100;
 
@@ -70,38 +70,13 @@
         border-radius: 10px;
 }
 
-.sinlog button {
-        height: 45px;
-        width: auto;
-        border-radius: 10px;
+.profilecontainer img{
+    border: transparent;
+    border-radius: 900px;
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 40%;
 
-        margin-top: 30px;
-        margin-left: -110px;
-}
-
-.sinlog button h1 {
-        font-size: 15px;
-}
-
-
-.register.open {
-        display: flex;
-        flex-direction: column;
-        flex-direction: column;
-        border: transparent;
-        margin-top: 40px;
-        margin-right: -20px;
-        background-color: rgb(255, 245, 245);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
-}
-
-.login {
-        border: transparent;
-}
-
-.register a {
-        text-decoration: none;
-        font-size: 20px;
 }
 
 
