@@ -24,5 +24,3 @@ async function signin() {
         alert("Login failed: " + error.message);
     }
 }
-
-

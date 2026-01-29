@@ -64,12 +64,12 @@
 
 
 
-#content1,
-#content2,
-#content3,
-#content4,
-#content5,
-#content6 {
+.content1,
+.content2,
+.content3,
+.content4,
+.content5,
+.content6 {
     display: none;
     flex-direction: column;
     border: solid 1px #ccc;
@@ -79,7 +79,13 @@
     margin-top: 20px;
 }
 
-.open {
+
+.content1.open,
+.content2.open,
+.content3.open,
+.content4.open,
+.content5.open,
+.content6.open {
     display: flex !important;
     animation: fadeIn 0.3s ease-in;
 }
@@ -195,18 +201,18 @@
     }
 }
 
-/* Hide by default like the others */
+
 #content6 {
   display: none;
 }
 
-/* Show when open */
+
 #content6.open {
   display: flex !important;
   flex-direction: column;
 }
 
-/* Scanner Card Styling */
+
 .scanner-info-card {
   background: white;
   padding: 30px;

@@ -274,4 +274,3 @@ function page6Show() {
     ofse3show.classList.remove("open");
 }
 
-

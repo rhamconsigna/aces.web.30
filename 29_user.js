@@ -1,5 +1,36 @@
+const supabaseUrl = 'https://iarjrxbkgeicfsdvdfil.supabase.co';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlhcmpyeGJrZ2VpY2ZzZHZkZmlsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjgzOTA4NjAsImV4cCI6MjA4Mzk2Njg2MH0.MkXmwSnSxXPjcpZ0GTDePjv-G-yw9K74TOaaUQSOsVg'; 
+const upabase = supabase.createClient(supabaseUrl, supabaseKey); 
 
-const logoo = document.getElementById("logo");
+// Just one function definition
+async function checkRegistration() {
+    console.log("Check starting...");
+    const { data: { user }, error: authError } = await upabase.auth.getUser();
+
+    if (!user) {
+        window.location.href = "08_login.html";
+        return;
+    }
+
+    const { data: profile, error: dbError } = await upabase
+        .from('profiles')
+        .select('role')
+        .eq('id', user.id)
+        .single();
+
+    if (dbError || !profile) {
+        window.location.href = "07_sign.html"; 
+    } else if (profile.role === 'admin') {
+        window.location.href = "22_adminNormal_dashboard.html";
+    }
+}
+
+// THE MOST IMPORTANT LINE: Call it so it runs!
+checkRegistration();
+
+
+    // ... rest of your logic
+    const logoo = document.getElementById("logo");
 const navbar = document.getElementById("navbar");
 const singuplogin = document.getElementById('signinlogin');
 const singlog = document.getElementById('register');
@@ -273,5 +304,4 @@ function page6Show() {
     ofse5show.classList.remove("open");
     ofse3show.classList.remove("open");
 }
-
 
